@@ -17,11 +17,12 @@ export default defineComponent({
   
 <style scoped>
 .content{
-    /* border: 1px solid #000; */
-    height: 100vh;
-    width: 100vw;
+    height: 95vh;
+    width: 90vw;
+    border-radius: 4px;
 
     background: rgb(246, 246, 246);
+    box-shadow: -1px 5px 15px 5px rgba(0,0,0,0.55);
 }
 
 @media screen and (min-width: 500px) {
@@ -29,7 +30,6 @@ export default defineComponent({
         height: 95vh;
         width: 400px;
 
-        border-radius: 4px;
     }
 }
 </style>
