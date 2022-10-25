@@ -1,17 +1,18 @@
 <template>
   <div class="content">
     <HeaderPage />
-
+    <BodyPage />
   </div>
 </template>
   
-  <script lang="ts">
+<script lang="ts">
 import { defineComponent } from "vue";
 import HeaderPage from './HeaderPage.vue';
+import BodyPage from "./BodyPage.vue";
 
 export default defineComponent({
   name: "ContentPage",
-  components: { HeaderPage }
+  components: { HeaderPage, BodyPage }
 });
 </script>
   
