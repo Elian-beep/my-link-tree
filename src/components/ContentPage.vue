@@ -1,17 +1,17 @@
 <template>
   <div class="content">
-    <ImageProfile />
+    <HeaderPage />
 
   </div>
 </template>
   
   <script lang="ts">
 import { defineComponent } from "vue";
-import ImageProfile from "./ImageProfile.vue";
+import HeaderPage from './HeaderPage.vue';
 
 export default defineComponent({
   name: "ContentPage",
-  components: { ImageProfile }
+  components: { HeaderPage }
 });
 </script>
   
