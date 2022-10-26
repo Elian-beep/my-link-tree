@@ -2,6 +2,7 @@
   <div class="content">
     <HeaderPage />
     <BodyPage />
+    <FooterPage />
   </div>
 </template>
   
@@ -9,10 +10,11 @@
 import { defineComponent } from "vue";
 import HeaderPage from "./HeaderPage.vue";
 import BodyPage from "./BodyPage.vue";
+import FooterPage from "./FooterPage.vue";
 
 export default defineComponent({
   name: "ContentPage",
-  components: { HeaderPage, BodyPage },
+  components: { HeaderPage, BodyPage, FooterPage },
 });
 </script>
   
