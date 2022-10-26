@@ -11,6 +11,7 @@
         <IconTec name-icon="fa-brands fa-node" font-color="#3CB371" />
         <IconTec name-icon="fa-brands fa-react" font-color="#00BFFF" />
     </div>
+    <p class="credits">Desenvolvido por Elian Batista</p>
   </footer>
 </template>
   
@@ -27,6 +28,7 @@ export default defineComponent({
 <style scoped>
 footer{
     margin-top: 22px;
+    margin-bottom: 8px;
 }
 
 .title-tec{
@@ -35,6 +37,7 @@ footer{
     width: 85%;
     margin: 0 auto;
     padding-top: 5px;
+    font-size: 10pt;
 }
 .icons-tec{
     margin: 0;
@@ -42,9 +45,15 @@ footer{
     display: flex;
     justify-content: space-evenly;
     gap: 6px;
-    width: 85%;
+    width: 30%;
     margin: 0 auto;
     flex-wrap: wrap;
+}
+
+.credits{
+    font-size: 10pt;
+    margin-top: 8px;
+    text-align: center;
 }
 </style>
   
