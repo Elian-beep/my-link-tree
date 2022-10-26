@@ -62,7 +62,7 @@ button i{
 
 button span{
     width: 50%;
-    text-align: left;
+    text-align: start;
 }
 
 button:hover{

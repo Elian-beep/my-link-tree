@@ -44,7 +44,7 @@ footer{
     padding: 0;
     display: flex;
     justify-content: space-evenly;
-    gap: 6px;
+    gap: 0 6px;
     width: 30%;
     margin: 0 auto;
     flex-wrap: wrap;

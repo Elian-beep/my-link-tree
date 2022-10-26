@@ -24,21 +24,14 @@ export default defineComponent({
   width: 90vw;
   border-radius: 4px;
 
-  background: rgb(246, 246, 246);
-  box-shadow: -1px 5px 15px 5px rgba(0, 0, 0, 0.55);
+  background: rgb(255, 255, 255);
+  box-shadow: -1px 5px 15px 5px rgba(255, 255, 255, 0.25);
 
   overflow-y: scroll;
 }
 
 .content::-webkit-scrollbar {
-  width: 5px;
-  border-radius: 10px;
-  background-color: #1c1c1c;
-}
-
-.content::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #363636;
+  width: 0;
 }
 
 @media screen and (min-width: 500px) {
