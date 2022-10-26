@@ -1,6 +1,6 @@
 <template>
     <button @click="redirectLink">
-        <i></i>
+        <i :class="icone"></i>
         <span>{{textButton}}</span>
     </button>
 </template>
@@ -18,6 +18,10 @@ export default defineComponent({
         inputLink: {
             type: String,
             required: true
+        },
+        icone: {
+            type: String,
+            required: true
         }
     },
     methods: {
@@ -32,22 +36,33 @@ export default defineComponent({
 <style scoped>
 
 button{
-    border: 1px solid #213140;
+    border: 1.5px solid #213140;
     background: none;
     width: 85%;
-    height: 35px;
+    height: 40px;
     border-radius: 4px;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     color: #213140;
+    font-weight: 500;
+    font-size: 10.5pt;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    transition: ease-in .2s;
+    transition: ease-in-out .25s;
+}
+
+button i{
+    font-size: 11pt;
+}
+
+button span{
+    width: 50%;
+    text-align: left;
 }
 
 button:hover{

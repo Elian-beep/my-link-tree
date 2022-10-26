@@ -1,10 +1,10 @@
 <template>
   <div>
-    <ButtonLink textButton="Portifólio" inputLink="https://cursos.alura.com.br/vitrinedev/elian-19batista"/>
-    <ButtonLink textButton="Github" inputLink="https://github.com/Elian-beep" />
-    <ButtonLink textButton="Linkedin" inputLink="https://www.linkedin.com/in/elian-batista-beep/" />
-    <ButtonLink textButton="E-mail" inputLink="mailto:elian.19batista@gmail.com" />
-    <ButtonLink textButton="Instagram" inputLink="https://www.instagram.com/e_lianb/" />
+    <ButtonLink textButton="Portifólio" icone="fa-regular fa-folder" inputLink="https://cursos.alura.com.br/vitrinedev/elian-19batista"/>
+    <ButtonLink textButton="Github" icone="fa-brands fa-github" inputLink="https://github.com/Elian-beep" />
+    <ButtonLink textButton="Linkedin" icone="fa-brands fa-linkedin" inputLink="https://www.linkedin.com/in/elian-batista-beep/" />
+    <ButtonLink textButton="E-mail" icone="fa-regular fa-envelope" inputLink="mailto:elian.19batista@gmail.com" />
+    <ButtonLink textButton="Instagram" icone="fa-brands fa-instagram" inputLink="https://www.instagram.com/e_lianb/" />
   </div>
 </template>
   
