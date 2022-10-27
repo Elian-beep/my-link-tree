@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <ContentPage>
+  <div class="container" :class="{ 'themeDark': isDark }">
+    <ContentPage @alterTheme="switchTheme">
 
     </ContentPage>
   </div>
@@ -12,16 +12,35 @@ import ContentPage from "./ContentPage.vue";
 
 export default defineComponent({
   name: "ContainerPage",
-  components: { ContentPage }
+  components: { ContentPage },
+  data() {
+    return{
+      isDark: false
+    }
+  },
+  methods: {
+    switchTheme(isDark : boolean){
+      this.isDark = isDark;
+      console.log(`Tema no container: ${this.isDark}`);
+      
+    }
+  }
 });
 </script>
 
 <style scoped>
+div{
+  --bg: #b4b4b4;
+}
+
+div.themeDark{
+  --bg: #636363;
+}
 .container {
   height: 100vh;
   max-width: 100vw;
 
-  background: #1C1C1C;
+  background: var(--bg);
 
   display: flex;
   align-items: center;

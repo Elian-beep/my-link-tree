@@ -18,6 +18,7 @@ import FooterPage from "./FooterPage.vue";
 export default defineComponent({
   name: "ContentPage",
   components: { HeaderPage, BodyPage, FooterPage },
+  emits: ['alterTheme'],
   data() {
     return{
       isDark: false
@@ -27,6 +28,7 @@ export default defineComponent({
     trocarTema() {
       this.isDark = !this.isDark;
       console.log("tema dark: ", this.isDark);
+      this.$emit('alterTheme', this.isDark);
     },
   },
 });
