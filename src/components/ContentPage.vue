@@ -95,7 +95,7 @@ main.themeDark {
 .btn-switchTheme i{
   color: var(--color-btnTheme);
   font-size: 18pt;
-  transition: background-color 0.3s, transform 0.3s ease-in;
+  transition: .4s ease-in-out;
 }
 
 @media screen and (min-width: 500px) {
