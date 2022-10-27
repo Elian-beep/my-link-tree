@@ -30,7 +30,7 @@ export default defineComponent({
 
 <style scoped>
 div{
-  --bg: #b4b4b4;
+  --bg: #e4e3e3;
 }
 
 div.themeDark{

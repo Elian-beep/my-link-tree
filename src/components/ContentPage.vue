@@ -1,11 +1,13 @@
 <template>
-  <main class="content" :class="{ 'themeDark': isDark }">
-    <div class="switchThem">
-      <button class="btn-switchTheme" @click="trocarTema">mt</button>
+  <main class="content" :class="{ themeDark: isDark }">
+    <div class="switchTheme">
+      <button class="btn-switchTheme" @click="switchTheme">
+        <i :class="`fa-solid fa-${switchThemeIcon}`"></i>
+      </button>
     </div>
     <HeaderPage :isDark="isDark" />
     <BodyPage :isDark="isDark" />
-    <FooterPage :isDark="isDark"/>
+    <FooterPage :isDark="isDark" />
   </main>
 </template>
   
@@ -18,33 +20,48 @@ import FooterPage from "./FooterPage.vue";
 export default defineComponent({
   name: "ContentPage",
   components: { HeaderPage, BodyPage, FooterPage },
-  emits: ['alterTheme'],
+  emits: ["alterTheme"],
   data() {
-    return{
-      isDark: false
-    }
+    return {
+      isDark: false,
+    };
+  },
+  props: {
+    themeIcon: {
+      type: String,
+      required: true,
+    },
+  },
+  computed: {
+    switchThemeIcon() {
+      if (this.isDark) {
+        return 'sun'
+      } else {
+        return 'moon';
+      }
+    },
   },
   methods: {
-    trocarTema() {
+    switchTheme() {
       this.isDark = !this.isDark;
       console.log("tema dark: ", this.isDark);
-      this.$emit('alterTheme', this.isDark);
+      this.$emit("alterTheme", this.isDark);
     },
   },
 });
 </script>
   
 <style scoped>
-
-main{
+main {
   --bg: rgb(255, 255, 255);
   --shadow: rgba(255, 255, 255, 0.25);
+  --color-btnTheme: rgb(26, 123, 250);
 }
 
-main.themeDark{
+main.themeDark {
   --bg: rgb(22, 22, 22);
   --shadow: rgba(0, 0, 0, 0.25);
-
+  --color-btnTheme: rgb(219, 200, 31);
 }
 .content {
   box-sizing: border-box;
@@ -62,8 +79,7 @@ main.themeDark{
   width: 0;
 }
 
-.switchThem {
-  background: green;
+.switchTheme {
   width: 100%;
   position: relative;
 }
@@ -72,6 +88,14 @@ main.themeDark{
   position: absolute;
   right: 16px;
   top: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-switchTheme i{
+  color: var(--color-btnTheme);
+  font-size: 18pt;
+  transition: background-color 0.3s, transform 0.3s ease-in;
 }
 
 @media screen and (min-width: 500px) {
