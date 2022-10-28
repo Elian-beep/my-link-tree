@@ -32,7 +32,7 @@ section{
 }
 
 section.themeDark{
-  --text-title: #ddeeff;
+  --text-title: rgb(246, 246, 246);
   --text-subtitle: #d3d3d3;
 }
 

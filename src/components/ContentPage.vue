@@ -24,13 +24,8 @@ export default defineComponent({
   data() {
     return {
       isDark: false,
+      themeIcon: ''
     };
-  },
-  props: {
-    themeIcon: {
-      type: String,
-      required: true,
-    },
   },
   computed: {
     switchThemeIcon() {
