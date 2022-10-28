@@ -1,24 +1,10 @@
-# my-link-tree
+# My Linktree
 
-## Project setup
-```
-npm install
-```
+Minha própria árvore de links desenvolvida com Vue.JS
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **My Linktree**
+| :label: Tecnologias | css, html, vuejs
+| :rocket: URL         | https://my-link-tree-five.vercel.app
+| :fire: Desafio     | Projeto Pessoal
