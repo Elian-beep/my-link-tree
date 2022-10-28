@@ -61,6 +61,7 @@ main.themeDark {
 .content {
   box-sizing: border-box;
   height: 95vh;
+  max-height: 750px;
   width: 90vw;
   border-radius: 4px;
 
@@ -95,7 +96,6 @@ main.themeDark {
 
 @media screen and (min-width: 500px) {
   .content {
-    height: 95vh;
     width: 400px;
   }
 }
