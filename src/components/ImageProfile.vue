@@ -2,7 +2,7 @@
   <div>
     <img
       class="image-profile"
-      src="@/assets/Avatar-Elian.svg"
+      src="@/assets/Perfil-Elian.png"
       alt="Avatar Elian"
     />
   </div>
@@ -26,5 +26,6 @@ div{
   height: 153px;
   width: 166;
   margin: 0px auto;
+  border-radius: 50%;
 }
 </style>

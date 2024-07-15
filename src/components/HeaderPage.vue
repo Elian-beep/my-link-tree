@@ -2,10 +2,8 @@
   <section :class="{ 'themeDark': isDark }">
     <ImageProfile />
     <h1>Elian Batista</h1>
-    <p>
-      Desenvolvedor Front End, estudando e se aventurando no Back End, Cursando Ciência da
-      Computação na UEA.
-    </p>
+    <p>Desenvolvedor Web</p>
+    <p>Graduado em Ciência da Computação</p>
   </section>
 </template>
 
@@ -29,6 +27,7 @@ export default defineComponent({
 section{
   --text-title: #213140;
   --text-subtitle: #636363;
+  margin-top: 30px;
 }
 
 section.themeDark{
